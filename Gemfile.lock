@@ -1,8 +1,8 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    addressable (2.8.6)
-      public_suffix (>= 2.0.2, < 6.0)
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.2)
     attic (1.0.1)
       rake (~> 13.0.6)
@@ -135,7 +135,7 @@ DEPENDENCIES
   yajl-ruby
 
 RUBY VERSION
-   ruby 2.6.8p205
+   ruby 3.3.3p89
 
 BUNDLED WITH
    2.4.12
