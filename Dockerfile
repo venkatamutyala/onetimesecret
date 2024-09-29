@@ -1,4 +1,4 @@
-# syntax=docker/dockerfile:experimental
+# syntax=docker/dockerfile:experimental@sha256:600e5c62eedff338b3f7a0850beb7c05866e0ef27b2d2e8c02aa468e78496ff5
 
 ##
 # ONETIME - DOCKER IMAGE - 2024-04-10
@@ -69,7 +69,7 @@
 ARG CODE_ROOT=/app
 ARG ONETIME_HOME=/opt/onetime
 
-FROM ruby:3.2-slim-bookworm AS builder
+FROM ruby:3.2-slim-bookworm@sha256:975031ee34ad3d5a7c701c50a04ef1a924202808dc214744ea9ea33070d890a6 AS builder
 
 # Limit to packages needed for the system itself
 # NOTE: We only need the build tools installed if we need
