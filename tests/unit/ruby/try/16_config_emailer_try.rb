@@ -43,7 +43,7 @@ OT.conf[:emailer][:tls]
 
 ## Emailer values can be set via environment variables
 ENV['EMAILER_MODE'] = 'sendmail'
-ENV['FROM_EMAIL'] = 'test@example.com'
+ENV['FROM'] = 'test@example.com'
 ENV['FROMNAME'] = 'Test User'
 ENV['SMTP_HOST'] = 'smtp.example.com'
 ENV['SMTP_PORT'] = '465'
@@ -70,7 +70,7 @@ OT.boot! :test
 
 ## Clearing environment variables restores default values
 ENV.delete('EMAILER_MODE')
-ENV.delete('FROM_EMAIL')
+ENV.delete('FROM')
 ENV.delete('FROMNAME')
 ENV.delete('SMTP_HOST')
 ENV.delete('SMTP_PORT')
